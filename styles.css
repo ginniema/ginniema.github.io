@@ -1,0 +1,27 @@
+/* Page-specific styling from the requested AcademicPages reference. */
+.teaching, .talks {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+.teaching h2, .talks h2 { margin: 1.75rem 0 0.75rem; }
+.teaching ul, .talks ul { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+.teaching li, .talks li { margin: 0.35rem 0; }
+.teaching ul + p { margin-top: 0.75rem; }
+.teaching hr, .talks hr { border: 0; height: 1px; background: #eaeaea; margin: 2rem 0; }
+
+/* Accessible equivalents of the theme's navigation interactions. */
+.greedy-nav .navicon { display: block; }
+.author__urls.is-open { display: block; z-index: 1; }
+.author__urls a { white-space: nowrap; }
+a:focus-visible, button:focus-visible { outline: 2px solid #52adc8; outline-offset: 3px; }
+#main:focus { outline: none; }
+.screen-reader-shortcut:focus { top: 0; left: 0; z-index: 100; background: #fff; padding: 1em; }
+.no-js .author__urls { display: block; position: static; }
+.no-js .author__urls-wrapper button { display: none; }
+.no-js .greedy-nav .visible-links { display: flex; flex-wrap: wrap; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
